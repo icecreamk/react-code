@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
-import ReactElement from './Component/react-element';
+import CustomComponents from './Component/index';
 import './App.css';
+
+const getComponent = code => {
+  const Component = CustomComponents[code]
+  return <Component />
+}
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ReactElement />
+        <ul>
+          {
+            CustomComponents.map((value, key) => {
+              return <li>{key}</li>
+            })
+          }
+      </ul>
       </div>
     );
   }
