@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
 
-class ReactElement extends Component {
+class ReactComponent extends Component {
   render() {
     return (
       <div>
         <div>
-            I am ReactElement
+            I am ReactComponent
         </div>
       </div>
     );
   }
 }
 
-export default ReactElement;
+export default ReactComponent;

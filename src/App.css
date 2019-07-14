@@ -19,6 +19,11 @@
   color: white;
 }
 
+.component-list {
+  list-style: none;
+  cursor: pointer;
+}
+
 .App-link {
   color: #61dafb;
 }
